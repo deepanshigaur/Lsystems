@@ -5,7 +5,7 @@ def main():
     t = turtle.Turtle()
     t.speed(0)
     wd = turtle.Screen()
-    wd.tracer(10) #reduce this number if you want things to go slower
+    wd.tracer(2) #reduce this number if you want things to go slower
 
     print("Test # 1: The Arrowhead Curve\n######################################\n")
     sys = lsystem.LSystem("arrowheadcurve.txt")

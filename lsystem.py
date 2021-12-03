@@ -57,7 +57,7 @@ class LSystem:
 			elif(cmd == '-'):
 				snap.left(self.angle)
 			elif(cmd == '['):
-				snap_state = vars(snap)
+				snap_state = {key:value for key, value in snap.__dict__.items()}
 				new_data.append(snap_state)
 			elif(cmd == ']'):
 				if new_data:
